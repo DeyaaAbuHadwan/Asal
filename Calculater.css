@@ -1,0 +1,90 @@
+.calc{
+    display: grid;
+    grid-template-areas:
+    'txt txt txt reset'
+    'b7 b8 b9 div'
+    'b4 b5 b6 multi'
+    'b1 b2 b3 sub'
+    'b0 d plus equal';
+    width: 225px;
+    height: 250px;
+    margin: 5px;
+
+
+}
+.txt{
+    grid-area: txt;
+    width: 160px ;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid  #4d4dff;
+}
+span{
+    color: white;
+    font-size: 30px ;
+}
+.body{
+   
+    border: 5px solid rgb(12, 29, 66);
+    border-radius: 10px;
+    overflow: auto;
+    align-content: center;
+    background-image: url("background.jpg"); 
+    margin: auto;
+    width : 230px;
+    align-items: center;
+}
+.btn{
+    width: 50px ;
+    height: 50px;
+    border-radius: 10px ;
+    text-align: center;
+    background-color: white; 
+    font-weight: bold ;
+    font-style: italic;
+
+
+}
+
+.btn:hover{
+    background-color: teal;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#btn0{grid-area:b0 ;}
+#btn1{ grid-area: b1;}
+#btn2{ grid-area: b2;}
+#btn3{ grid-area: b3;}
+#btn4{ grid-area: b4;}
+#btn5{ grid-area: b5;}
+#btn6{ grid-area: b6;}
+#btn7{ grid-area: b7;}
+#btn8{ grid-area: b8;}
+#btn9{ grid-area: b9;}
+#dot{ grid-area: d ;}
+#plus{ grid-area: plus;}
+#sub{ grid-area: sub ;}
+#equal{ grid-area: equal; background-color:royalblue; color : white;}
+#div{ grid-area: div; }
+#multi{ grid-area: multi;}
+#reset{ grid-area: reset;
+       color:blue ;
+       font-style: bold ;
+       font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;}   
+
+.icon {
+    width :30px;
+    height: 30px;
+    float: right;
+   margin: 5px;
+}
+#reset:hover{
+color: red;
+}
+
+.btn:active{
+    background-color: #4CAF50;
+}

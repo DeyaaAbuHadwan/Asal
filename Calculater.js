@@ -15,6 +15,7 @@ document.getElementById("equal").addEventListener("click",postFix);
 document.getElementById("btn/").addEventListener("click",addNumber);
 document.getElementById("btn*").addEventListener("click",addNumber);
 document.getElementById("reset").addEventListener("click",reset);
+
 var number=0 ,flag = 0;
 var arrNumber = [] ;
 var arrOperation = [];
